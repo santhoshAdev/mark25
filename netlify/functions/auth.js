@@ -1,7 +1,7 @@
 const express = require("express");
 const serverless = require("serverless-http");
 const bcrypt = require("bcryptjs");
-const db = require("../database");
+const db = require("./database");  // ✅ Corrected path
 
 const app = express();
 app.use(express.json());
